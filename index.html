@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lieblingsort von Stephan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -42,10 +43,10 @@
                 </figcaption>
             </figure>
 
-            <h3>Übersichtskarte</h3>
+            <h3><i class="fa-solid fa-map-location-dot"></i> Übersichtskarte</h3>
             <div id="map" style="width:900px;height:600px" ;border:1px solid silver></div>
 
-            <h3>links</h3>
+            <h3><i class="fa-solid fa-link"></i> links</h3>
             <ul>
                 <li><a href="https://www.viator.com/de">viator</a></li>
                 <li><a href="https://sevillatipps.de/sehenswurdigkeiten.html">Sevilla Tipps</a></li>
@@ -57,9 +58,11 @@
     </main>
 
     <footer>
-        <a href="https://moplatt.github.io/top"><i class="fa-solid fa-arrow-left"></i> vorhergehende Etappe</a>
-        <a href="https://StephanPumpernik.github.io/top"><i class="fa-solid fa-house"></i> diese Etappe</a>
-        <a href="https://fritzcrone.github.io/top/">nächste Etappe <i class="fa-solid fa-arrow-right"></i></a>
+        <nav>
+            <a href="https://moplatt.github.io/top"><i class="fa-solid fa-arrow-left"></i> vorhergehende Etappe</a>
+            <a href="https://StephanPumpernik.github.io/top"><i class="fa-solid fa-house"></i> diese Etappe</a>
+            <a href="https://fritzcrone.github.io/top/">nächste Etappe <i class="fa-solid fa-arrow-right"></i></a>
+        </nav>
     </footer>
 
     <script>
