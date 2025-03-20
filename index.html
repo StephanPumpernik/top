@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lieblingsort von Stephan</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <head>
@@ -21,35 +24,42 @@
     </header>
     <main>
         <article>
-    <h1>Lieblingsort von Stephan</h1>
-    <h2>Sevilla</h2>
-    <p>Sevilla ist die Hauptstadt der Autonomen Region Andalusien und der Provinz Sevilla von Spanien. Mit knapp 690.000 Einwohnern ist Sevilla die viertgrößte Stadt Spaniens. Nach einer Legende wurde die Stadt von dem griechischen Helden Herakles gegründet.[2] Die Einwohner werden als sevillanos bezeichnet.</p>
-    <p>Die Stadt ist ein wesentlicher Industrie- und Handelsplatz und ein Touristenzentrum. Sevillas Altstadt ist die größte Spaniens und neben Venedig sowie der Altstadt von Genua eine der größten Altstädte Europas.</p>
-    <a href="https://de.wikipedia.org/wiki/Sevilla">Quelle: wikipedia</a>
-    <figure>
-        <img src="images/attraction.jpg" alt="Plaza de Sevilla">
-        <!--Bild von https://pixabay.com/de/photos/plaza-spanisch-sevilla-spanien-1751442/-->
-        <figcaption>
-            Blick auf den Plaza de Sevilla (Quelle: <a href="https://pixabay.com/de/photos/plaza-spanisch-sevilla-spanien-1751442/">pixabay</a>)
-        </figcaption>
-    </figure>
+            <h1>Lieblingsort von Stephan</h1>
+            <h2>Sevilla</h2>
+            <p>Sevilla ist die Hauptstadt der Autonomen Region Andalusien und der Provinz Sevilla von Spanien. Mit knapp
+                690.000 Einwohnern ist Sevilla die viertgrößte Stadt Spaniens. Nach einer Legende wurde die Stadt von
+                dem griechischen Helden Herakles gegründet.[2] Die Einwohner werden als sevillanos bezeichnet.</p>
+            <p>Die Stadt ist ein wesentlicher Industrie- und Handelsplatz und ein Touristenzentrum. Sevillas Altstadt
+                ist die größte Spaniens und neben Venedig sowie der Altstadt von Genua eine der größten Altstädte
+                Europas.</p>
+            Quelle: <a href="https://de.wikipedia.org/wiki/Sevilla">Wikipedia</a>
+            <figure>
+                <img src="images/attraction.jpg" alt="Plaza de Sevilla">
+                <!--Bild von https://pixabay.com/de/photos/plaza-spanisch-sevilla-spanien-1751442/-->
+                <figcaption>
+                    Blick auf den Plaza de Sevilla (Quelle: <a
+                        href="https://pixabay.com/de/photos/plaza-spanisch-sevilla-spanien-1751442/">pixabay</a>)
+                </figcaption>
+            </figure>
 
-    <h3>Übersichtskarte</h3>
-    <div id="map" style="width:900px;height:600px" ;border:1px solid silver></div>
+            <h3>Übersichtskarte</h3>
+            <div id="map" style="width:900px;height:600px" ;border:1px solid silver></div>
 
-    <h3>links</h3>
-    <ul>
-        <li><a href="https://www.viator.com/de">viator</a></li>
-        <li><a href="https://sevillatipps.de/sehenswurdigkeiten.html">Sevilla Tipps</a></li>
-        <li><a href="https://www.tripadvisor.de/Attractions-g187443-Activities-Seville_Province_of_Seville_Andalucia.html">tripadvisor</a></li>
-    </ul>
-    </article>
+            <h3>links</h3>
+            <ul>
+                <li><a href="https://www.viator.com/de">viator</a></li>
+                <li><a href="https://sevillatipps.de/sehenswurdigkeiten.html">Sevilla Tipps</a></li>
+                <li><a
+                        href="https://www.tripadvisor.de/Attractions-g187443-Activities-Seville_Province_of_Seville_Andalucia.html">tripadvisor</a>
+                </li>
+            </ul>
+        </article>
     </main>
 
     <footer>
-        <a href="https://moplatt.github.io/top">vorhergehende Etappe</a>
-        <a href="https://StephanPumpernik.github.io/top">diese Etappe</a>
-        <a href="https://fritzcrone.github.io/top/">nächste Etappe</a>
+        <a href="https://moplatt.github.io/top"><i class="fa-solid fa-arrow-left"></i> vorhergehende Etappe</a>
+        <a href="https://StephanPumpernik.github.io/top"><i class="fa-solid fa-house"></i> diese Etappe</a>
+        <a href="https://fritzcrone.github.io/top/">nächste Etappe <i class="fa-solid fa-arrow-right"></i></a>
     </footer>
 
     <script>
