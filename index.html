@@ -12,6 +12,7 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script defer src="main.js"></script>
 </head>
 
 <head>
@@ -65,13 +66,5 @@
         </nav>
     </footer>
 
-    <script>
-        var map = L.map('map').setView([37.3925, -5.9925], 13);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
-        var marker = L.marker([37.3925, -5.9925]).addTo(map);
-        marker.bindPopup("<b>Sevilla</b><br>I am a popup.").openPopup();
-    </script>
+    
 </body>
