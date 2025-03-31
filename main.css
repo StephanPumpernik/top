@@ -56,6 +56,11 @@ article figure>img {
     margin: auto;
 }
 
+#pulldown {
+    margin-left: calc(5%);
+    margin-top: 1em;
+}
+
 footer {
     text-align: center;
     padding: 1em 2em 3em 2em;
