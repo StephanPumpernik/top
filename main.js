@@ -224,6 +224,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+//maßstab machen
+L.control.scale({
+    imperial: false
+}).addTo(map);
+
 //loop über Etappen
 for (let i = 0; i < STOPS.length; i++) {
 
