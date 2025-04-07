@@ -224,12 +224,20 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+//Overlay definieren
+let overlays = {
+  marker: L.featureGroup().addTo(map),
+}
+
 //Layercontrol machen
 L.control.layers({
     "OpenStreetMap.Mapnik": L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map),
-    "OpenTopoMap": L.tileLayer.provider('OpenTopoMap').addTo(map),
-    "Esri WorldImaginary": L.tileLayer.provider('Esri.WorldImagery').addTo(map),
-})
+    "OpenTopoMap": L.tileLayer.provider('OpenTopoMap'),
+    "Esri WorldImaginary": L.tileLayer.provider('Esri.WorldImagery'),
+
+}, {
+    "Etappen": overlays.marker,
+}).addTo(map);
 
 //maßstab machen
 L.control.scale({
@@ -241,6 +249,7 @@ for (let i = 0; i < STOPS.length; i++) {
 
     //marker zeichnen
     let marker = L.marker([STOPS[i].lat, STOPS[i].lng]).addTo(map);
+    marker.addTo(overlays.marker)
 
     //popup definieren 
     marker.bindPopup(`
@@ -250,6 +259,7 @@ for (let i = 0; i < STOPS.length; i++) {
             <li> Geogr. Länge: ${STOPS[i].lng.toFixed(5)}° </>
            </ul>
             `);
+
 
     //auf eigene Etappe blicken und popup öffnen
     if (STOPS[i].user == "StephanPumpernik") {
