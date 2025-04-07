@@ -224,6 +224,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+//Layercontrol machen
+L.control.layers({
+    "OpenStreetMap.Mapnik": L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map),
+    "OpenTopoMap": L.tileLayer.provider('OpenTopoMap').addTo(map),
+    "Esri WorldImaginary": L.tileLayer.provider('Esri.WorldImagery').addTo(map),
+})
+
 //maßstab machen
 L.control.scale({
     imperial: false
